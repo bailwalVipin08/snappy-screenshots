@@ -15,6 +15,10 @@ public class SnappyScreenshot {
         this.numOfScreenshots = 5;
         String username = System.getProperty("user.name");
         this.stopTime = null;
-        this.outputDir = "/home/" + username + "/Pictures/snappy-screenshots";
+        String os = System.getProperty("os.name");
+        if("Linux".equals(os))
+            this.outputDir = "/home/" + username + "/Pictures/snappy-screenshots";
+        else if(os.contains("Windows"))
+            this.outputDir = "C:\\" + username + "Users\\Pictures\\snappy-screenshots\\";
     }
 }
