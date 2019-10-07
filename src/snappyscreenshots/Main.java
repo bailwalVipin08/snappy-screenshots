@@ -20,7 +20,6 @@ public class Main {
         int n = sc.nextInt();
 
         for (int i = 0; i < n; i++) {
-
             BufferedImage image = robot.createScreenCapture(screen);
             // This will store screenshot on Specific location
             ImageIO.write(image, "png", new File(outputDirectory + "testImage" + i +".png"));
