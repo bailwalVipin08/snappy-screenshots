@@ -1,17 +1,17 @@
 package snappyscreenshots;
 
-public class Time {
-    int hours;
-    int minutes;
-    int seconds;
+class Time {
+    private int hours;
+    private int minutes;
+    private int seconds;
 
-    public Time(int hours, int minutes, int seconds) {
+    Time(int hours, int minutes, int seconds) {
         this.hours = hours;
         this.minutes = minutes;
         this.seconds = seconds;
     }
 
-    public static Time difference(Time start, Time stop){
+    static Time difference(Time start, Time stop){
 
         Time diff = new Time(0, 0, 0);
         if(stop.seconds > start.seconds){
@@ -29,8 +29,7 @@ public class Time {
         return diff;
     }
 
-    public static Time parse(String timeString){
-        Time t;
+    static Time parse(String timeString){
         String[] userTime = timeString.split(":");
         int[] time = new int[3];
         for(int i = 0; i < userTime.length; i++){
@@ -39,7 +38,7 @@ public class Time {
         return new Time(time[0], time[1], time[2]);
     }
 
-    public static long getMilliSec(Time t){
+    static long getMilliSec(Time t){
         return (t.hours*3600000 + t.minutes*60000 + t.seconds*1000);
     }
 

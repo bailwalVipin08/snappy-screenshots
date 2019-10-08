@@ -2,10 +2,10 @@ package snappyscreenshots;
 
 import java.time.LocalTime;
 
-public class SnappyScreenshot {
+class SnappyScreenshot {
     Time startTime;
     Time stopTime;
-    int numOfScreenshots;
+    int  numOfScreenshots;
     long interval;
     String outputDir;
 
