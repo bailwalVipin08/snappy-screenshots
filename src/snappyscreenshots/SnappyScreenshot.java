@@ -19,6 +19,6 @@ class SnappyScreenshot {
         if("Linux".equals(os))
             this.outputDir = "/home/" + username + "/Pictures/snappy-screenshots";
         else if(os.contains("Windows"))
-            this.outputDir = "C:\\" + username + "Users\\Pictures\\snappy-screenshots\\";
+            this.outputDir = "C:\\Users\\" + username + "\\Pictures\\snappy-screenshots\\";
     }
 }
