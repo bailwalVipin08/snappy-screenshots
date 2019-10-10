@@ -17,7 +17,7 @@ class SnappyScreenshot {
         this.stopTime = null;
         String os = System.getProperty("os.name");
         if("Linux".equals(os))
-            this.outputDir = "/home/" + username + "/Pictures/snappy-screenshots";
+            this.outputDir = "/home/" + username + "/Pictures/snappy-screenshots/";
         else if(os.contains("Windows"))
             this.outputDir = "C:\\Users\\" + username + "\\Pictures\\snappy-screenshots\\";
     }
