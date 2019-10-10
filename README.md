@@ -12,7 +12,7 @@ $ javac snappyscreenshot/Main.java
 ```
 # Basic Usage
 ```shell script
-$  snappy-screenshot [--start <start time>] [--stop <stop time>] [--interval <time interval>] [--dir <output directory>] [-h, --help <detailed help>]  [--nos <number of screenshots>]
+$  java snappyscreenshots.Main [--start <start time>] [--stop <stop time>] [--interval <time interval>] [--dir <output directory>] [-h, --help <detailed help>]  [--nos <number of screenshots>]
 ```
 Following options are supported:
 ```
